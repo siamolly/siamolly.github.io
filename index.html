@@ -1,24 +1,118 @@
-<!DOCTYPE html>  <!--文件類型宣告(doc type)-->
-
-<!--整個html文件-->
-<html>
-
-    <!--文件表頭-->
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Noto+Serif+TC:wght@300;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kdam+Thmor&family=Noto+Serif+TC:wght@300;900&display=swap" rel="stylesheet">
         
-        <!--文件標題-->
-        <title>第一個網頁</title>
-        
-        <!--可以搜尋到的關鍵字-->
-        <mata name="keywords" content="關鍵字1,關鍵字2">
-        <style></style>
-        <script></script>
-        
+        <title>408411089</title>
+        <style>
+            .w1{font-family: 'Itim', cursive;
+                font-family: 'Kdam Thmor', cursive;
+                font-family: 'Noto Serif TC', serif;}
+        </style>
     </head>
-    
-        <!--文件內容-->
-    <body>
-        Hello World!
-    </body>
+
+
+   <body>
+       
+       <div id="photoCarousel" class="carousel slide vertical" data-ride="carousel">
+        <!-- Indicators 瀏覽控制 --> 
+        <ol class="carousel-indicators" style="margin-top:50px">
+            <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#photoCarousel" data-slide-to="1"></li>
+            <li data-target="#photoCarousel" data-slide-to="2"></li>
+            <li data-target="#photoCarousel" data-slide-to="3"></li>
+            <li data-target="#photoCarousel" data-slide-to="4"></li>
+        </ol>
+        <!-- 建立相片清單 -->
+           <div class="carousel-inner">
+               <div class="item active">
+                   <img src="https://i.ytimg.com/vi/WZwr2a_lFWY/maxresdefault.jpg">
+               </div>
+               <div class="item">
+                   <img src="https://i.ytimg.com/vi/6eEZ7DJMzuk/maxresdefault.jpg">
+               </div>
+               <div class="item">
+                   <img src="https://i.ytimg.com/vi/eDEFolvLn0A/maxresdefault.jpg">
+               </div>
+               <div class="item">
+                   <img src="https://cdn1.wishnote.tw/500/2020/06/25/500_1535359_1593071669.jpeg">
+               </div>
+               <div class="item">
+                    <img src="https://i.ytimg.com/vi/G8GaQdW2wHc/maxresdefault.jpg">
+               </div>
+           </div>
+        <!-- 上一張/下一張控制 --> 
+            <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+            <span class=“glyphicon glyphicon-chevron-left”></span></a>
+            <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+            <span class=“glyphicon glyphicon-chevron-right”></span></a>
+          
+       </div>
+
+       
+        <!-- 巡覽列, navbar-default 表示白底黑字樣式 -->
+       <nav class="navbar navbar-default">
+       <!-- 選單表頭區塊 -->
+            <div class="navbar-header">
+                <span href="#" class="navbar-brand" ><h3>WIZ*ONE秘密(作業)花園</h3></span>
+                <!-- 按鈕 -->
+                <button type="button" class="navbar-toggle" 
+                    data-toggle="collapse" data-target="#mynav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+           <!-- 選單 -->
+            <div id="mynav" class="navbar-collapse collapse">
+                <ul class="navbar-nav nav">
+      
+                    <li><a href="./hw1.html"><!-- 選單項目 1 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi    bi-dice-1" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="1.5"/>
+                            <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+                        </svg> <h5>HW1</h5></a></li>
+                    <li><a href="./hw2.html"><!-- 選單項目 2 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dice-2-fill" viewBox="0 0 16 16">
+                            <path d="M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3zm5.5 1a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm6.5 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                        </svg> <h5 class="w1">HW2</h5></a></li>
+                    <li><a href="./hw3.html"><!-- 選單項目 3 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dice-3" viewBox="0 0 16 16">
+                            <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+                            <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-4-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                        </svg> <h5>HW3</h5></a></li>
+                    <li><a href="./hw4.html"><!-- 選單項目 4 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-dice-4-fill" viewBox="0 0 16 16">
+                            <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm1 5.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm1.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM4 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                        </svg> <h5 class="w1">HW4</h5></a></li>
+                    
+                    <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">  
+                    <!-- 選單項目 5：下拉子選單 -->
+                        <span class="glyphicon glyphicon-info-sign"></span> ABOUT US<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><span class="glyphicon glyphicon-plane"> 經營團隊</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"> 創意總監</a></li>
+                            <li class="divider"></li>    
+                            <!-- 分隔線 -->
+                            <li><a href="#"><span class="glyphicon glyphicon-envelope"> 加入我們</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+       </nav>
+       
+       
+   </body>
 
 </html>
