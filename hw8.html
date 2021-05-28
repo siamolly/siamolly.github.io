@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>第一個JAVA SCRIPT 程式</title>
+        <SCRIPT LANGUAGE="javascript">
+            var timer = 0;
+            var str=['Hi','你知道為什麼要點這個按鈕嗎？','對','其實我也不知道','因為是作業，想說要掰長一點的陣列','所以就變成這樣了','已經沒東西了再點也沒用啦','真的真的']
+            
+            
+            function story(){
+                if(timer < 7) alert(str[timer++]);
+                if(timer==7){
+                }
+            }
+            function OpenButton(){
+                timer=0;
+            }
+            
+        </script>
+    
+    
+    
+    </head>
+    <body>
+        <input type="button" id="b1" value="點我點我!"
+            onclick="javascript:story();" >
+        <h1 >點點看可能有驚喜</h1>
+        
+        <br><br><br><br>
+        
+        <input type="button" value="點我重置"
+            onclick="javascript:OpenButton();" >
+        
+    </body>
+
+
+
+
+
+
+</html>
